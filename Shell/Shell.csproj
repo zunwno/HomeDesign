@@ -57,6 +57,7 @@
     </ApplicationDefinition>
     <Compile Include="BaseShape.cs" />
     <Compile Include="DrawingSurface.cs" />
+    <Compile Include="Extensions\StringExtensions.Measure.cs" />
     <Compile Include="HRuler.cs" />
     <Compile Include="Frame.xaml.cs">
       <DependentUpon>Frame.xaml</DependentUpon>
