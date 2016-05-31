@@ -1,0 +1,23 @@
+﻿<UserControl x:Class="Shell.DesignPage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Shell" Name="NDesignPage"
+             mc:Ignorable="d" Background="#292929">
+    <ScrollViewer HorizontalScrollBarVisibility="Visible" VerticalScrollBarVisibility="Visible">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <local:DrawingSurface x:Name="DrawingSurface" PageWidth="8.5" PageHeight="11" Background="White" Grid.Row="1" Grid.Column="1" Margin="40"/>
+            <local:HRuler x:Name="HorizontalRuler" Grid.Row="0" Grid.Column="1" Height="20" />
+            <local:VRuler x:Name="VerticalRuler" Grid.Row="1" Grid.Column="0" Width="20" />
+        </Grid>
+    </ScrollViewer>
+</UserControl>
